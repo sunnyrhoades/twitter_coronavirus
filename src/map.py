@@ -72,7 +72,6 @@ with zipfile.ZipFile(args.input_path) as archive:
                     counter_country['_all'][country] += 1
                     counter_lang['_all'][lang] += 1
 
-# open the outputfile
 try:
     os.makedirs(args.output_folder)
 except FileExistsError:
